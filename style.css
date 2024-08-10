@@ -1,0 +1,108 @@
+* {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.hero-title {
+  font-size: 60px;
+  line-height: 60px;
+  margin-bottom: 20px;
+}
+
+.hero-caption {
+  padding-left: 120px;
+}
+
+.hero-img {
+  background-image: url("assets/heroimg.png");
+  background-size: cover;
+  background-position: center;
+  height: 110vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-link {
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+}
+
+.bg-footer {
+  background-color: #232340;
+}
+
+.input-modify .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.75);
+  opacity: 1;
+}
+
+.review-card {
+  width: 400px;
+  height: 1000x;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#reviewCarousel {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+  gap: 1rem;
+}
+
+#reviewCarousel .card {
+  min-width: 300px;
+  flex: 0 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-img {
+    height: 150vh;
+  }
+  .hero-caption {
+    padding-left: 20px;
+    width: 100% !important;
+  }
+
+  .hero-title {
+    font-size: 40px;
+    line-height: 40px;
+    width: 100%;
+  }
+
+  .input-group {
+    width: 100%;
+  }
+
+  .input-group-text {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .hero-caption {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  #reviewCarousel {
+    flex-wrap: nowrap;
+  }
+
+  #reviewCarousel .card {
+    min-width: 100%;
+  }
+}
